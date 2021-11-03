@@ -44,30 +44,3 @@ rpio.pwmSetData(12, 1800)
 setTimeout(function(){
   rpio.pwmSetData(12, 0);
 }, 5000);
-
-
-//rpio.write(15, rpio.LOW);
-
-//console.log(rpio.read(15));
-//rpio.pud(15, rpio.PULL_OFF);   //pulls resistor up down or off
-//rpio.write(15, rpio.HIGH);
-//console.log(rpio.read(15));
-/*
-var counter = 0;
-setInterval(
-        function(){
-                counter++;
-                if(rpio.read(12) == 0){
-                        rpio.write(12, rpio.HIGH);
-                }else{
-                        rpio.write(12, rpio.LOW);
-                }
-                //rpio.pwmSetClockDivider(64); //set refresh rate, I don't get the other two below?
-                //rpio.pwmSetRange(12, 1024);
-                //rpio.pwmSetData(12, 512);
-                if(counter == 100){
-                        clearInterval();
-                }
-        }, 5000);
-*/
-//"Rpio automatically unmaps and clears all memory maps when the node process exis"
