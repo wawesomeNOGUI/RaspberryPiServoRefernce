@@ -40,7 +40,7 @@ rpio.pwmSetRange(12, 24000);  //pwmSetRange takes (pin, max count) (count rolls 
 //Turn servo to middle (0 degrees rotation)
 rpio.pwmSetData(12, 1800)
 
-//===========Remember: PWM doesn't clean up so setData all to 0 to stop them=====================
+//===========Remember: PWM doesn't clean up after node.js program finishes so setData all to 0 to stop PWM=====================
 setTimeout(function(){
   rpio.pwmSetData(12, 0);
 }, 5000);
